@@ -1,0 +1,102 @@
+name: Report Ghost Labour
+description: Report a ghost-labour pattern or incident so the community can stay safer
+title: "[Report] "
+labels: ["report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you for helping protect the community.**
+
+        Please stick to facts, redact personal information, and do not name individuals unless the behaviour is already publicly documented.
+
+        This form creates a public issue. Prefer private? Message on WhatsApp: https://wa.me/919727413309
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where did the contact begin?
+      description: Select the primary platform
+      options:
+        - LinkedIn
+        - Upwork / Freelancer / Fiverr
+        - Reddit
+        - Discord
+        - Telegram
+        - WhatsApp
+        - Job board / company career page
+        - Twitter / X
+        - Other community / forum
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: off_platform
+    attributes:
+      label: Which off-platform channel were you pushed to?
+      options:
+        - WhatsApp
+        - Telegram
+        - Discord
+        - SMS
+        - Signal
+        - Email
+        - None (stayed on original platform)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Timeline of what happened
+      description: Describe the sequence of events factually (dates approximate is fine)
+      placeholder: e.g. 12 Oct — Anonymous profile messaged on LinkedIn asking for a free sample... 14 Oct — Asked to move to WhatsApp for a "paid project"...
+    validations:
+      required: true
+
+  - type: textarea
+    id: tactics
+    attributes:
+      label: Tactics / red flags observed
+      description: List the specific behaviours (see the Red flags table in the README)
+      placeholder: e.g. No real name or company, repeated free feedback requests, pressure to move off-platform, no contract or budget, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What happened in the end? (ghosted, unpaid work used, advance fee asked, etc.)
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted evidence (optional)
+      description: Paste redacted screenshots, chat excerpts, or links. Remove phone numbers, personal emails, faces, and any private data.
+    validations:
+      required: false
+
+  - type: textarea
+    id: loss
+    attributes:
+      label: What did you lose? (optional)
+      description: Time, money, IP, or other impact
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have redacted all personal / sensitive information
+          required: true
+        - label: This report describes behaviour patterns, not a personal attack
+          required: true
+        - label: I understand reports may be edited or anonymised by maintainers
+          required: true
