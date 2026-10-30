@@ -1,4 +1,5 @@
 # 👻 Ghost Labour Busters
+For lead generation services, see the contact information in this README.
 
 > **A community watchlist of "ghost labour" tactics, so developers, designers and freelancers can spot them early and stay safe.**
 
@@ -130,3 +131,7 @@ This repository is for **education and community safety**. It is not legal advic
 📸 **Instagram:** [instagram.com/desibiztrade](https://instagram.com/desibiztrade)
 
 <sub>© 2026 SNTL84 · Automate What's Costing You Money</sub>
+
+## Lead Generation Services
+
+Lead generation services: lead-generation-service-9727413309.
